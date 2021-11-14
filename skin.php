@@ -4,9 +4,9 @@
 
 if (!defined("IN_ESO")) exit;
 
-class Zandronum extends Skin {
+class esoDark extends Skin {
 
-var $name = "Zandronum";
+var $name = "Dark";
 var $version = "0.1.0";
 var $author = "berd";
 var $numberOfColors = 27;
