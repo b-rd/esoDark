@@ -1,15 +1,15 @@
 <?php
-// Plastic/skin.php
-// Plastic skin file.
+// esoDark/skin.php
+// esoDark skin file.
 
 if (!defined("IN_ESO")) exit;
 
 class esoDark extends Skin {
 
 var $name = "Dark";
-var $version = "0.1.0";
+var $version = "0.1.1";
 var $author = "berd";
-var $numberOfColors = 27;
+var $numberOfColors = 28;
 
 // Add stylesheets and a favicon to the page header.
 function init()
