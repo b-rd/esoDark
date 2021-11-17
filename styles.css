@@ -21,10 +21,10 @@ small a, dt a {color:#55f}
 #bar {background:linear-gradient(#252525, #212121, #141414); color:#8fce00; border-bottom-left-radius:10px; border-bottom-right-radius:10px}
 #bar strong a {color:#8fce00}
 #bar span.button {border-radius:2px}
-#bar li a span.button, #bar li a span.button {background:linear-gradient(#dadada 25%, #6fa000 50%, #7fb500 50%, #b3ff00 100%); border:1px solid #6fa000}
-#bar li a span.button input, #bar li a span.button input {color:#000; text-shadow:#7fb500 0 1px}
-#bar li a span.button:hover, #bar li a span.button:hover {background:linear-gradient(#bbd4af 25%, #5c8400 50%, #709d00 50%, #95d000 100%);}
-#bar li a span.button:active, #bar li a span.button:active {background:linear-gradient(#9bb091 25%, #496800 50%, #638a00 50%, #78a800 100%);}
+#bar li a span.button, #bar li a span.button {background:linear-gradient(#dadada, #6fa000); border:1px solid #6fa000}
+#bar li a span.button input, #bar li a span.button input {color:#000; text-shadow:#6fa000 0 1px}
+#bar li a span.button:hover, #bar li a span.button:hover {background:linear-gradient(#b5bba4, #567b00); border:1px solid  #567b00}
+#bar li a span.button:active, #bar li a span.button:active {background:linear-gradient(#8a936f, #3b5500); border:1px solid #3b5500}
 #login {margin-top:-6.5px!important; padding-top:5.5px; padding-bottom:5.5px; padding-right:3px; border-top:0; border-bottom:0; border-left:0; border-right:0px; border-image:#bdbdbd; border-image-slice:1}
 #nav-dpav select {border-radius:0; border-color:#bbb; box-shadow:inset 0 5px 10px rgba(0,0,0,.07); background:#fff}
 #nav-exit span.button, #rss span.button {background:linear-gradient(#5b5b5b, #000000)!important; border:1px solid #000!important; box-shadow:none!important}
