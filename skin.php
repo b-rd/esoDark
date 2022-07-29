@@ -7,7 +7,7 @@ if (!defined("IN_ESO")) exit;
 class esoDark extends Skin {
 
 var $name = "Dark";
-var $version = "0.1.1";
+var $version = "0.2.0";
 var $author = "berd";
 var $numberOfColors = 28;
 
