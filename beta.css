@@ -1,0 +1,8 @@
+/* This file contains the compatability styles for esoTalk beta */
+
+/* User bar */
+#bar .fl li {margin-right: 20px}
+#bar .fr li {margin-left: 20px}
+
+/* Footer */
+#ftr #copyright {float: right; margin: 0}
