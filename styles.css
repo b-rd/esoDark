@@ -67,7 +67,7 @@ a, .link, .p .hdr a.link {color:#72c4ff}
 .msg .close:active {background:#aaa}
 .msg {background:#cdd8e7; line-height:1.4; margin:0 0 1em 0; padding:5px 10px; border-radius:3px}  /*change color */
 .info {background:#384c64; border-radius:3px}
-.success {background:#cf0; border-radius:3px}
+.success {background:rgb(32, 138, 0); border-radius:3px}
 .warning {background:#c00; color:#fff; border-radius:3px}
 .warning a, .warning a:hover {color:#fff; text-decoration:underline}
 .msg code {background:none}
