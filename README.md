@@ -1,7 +1,7 @@
-# esoFlat
+# esoDark
 ![Image](https://github.com/b-rd/esoDark/blob/main/preview.png)
 
-Dark theme for getEso forum software (![Link](https://github.com/geteso/eso/))
+Dark theme for esoBB and esoTalk beta forum software
 =========
 Installation instructions:
 
