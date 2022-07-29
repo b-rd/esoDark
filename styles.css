@@ -21,16 +21,16 @@ small a, dt a {color:#55f}
 #bar {background:linear-gradient(#252525, #212121, #141414); color:#8fce00; border-bottom-left-radius:10px; border-bottom-right-radius:10px}
 #bar strong a {color:#8fce00}
 #bar span.button {border-radius:2px}
-#bar li a span.button, #bar li a span.button {background:linear-gradient(#dadada, #6fa000); border:1px solid #6fa000}
-#bar li a span.button input, #bar li a span.button input {color:#000; text-shadow:#6fa000 0 1px}
-#bar li a span.button:hover, #bar li a span.button:hover {background:linear-gradient(#b5bba4, #567b00); border:1px solid  #567b00}
-#bar li a span.button:active, #bar li a span.button:active {background:linear-gradient(#8a936f, #3b5500); border:1px solid #3b5500}
+#bar li a span.button, #bar li a span.button {background:linear-gradient(#6fa000, #213000); border:1px solid #000;}
+#bar li a span.button input, #bar li a span.button input {color:#fff; text-shadow:#213000 0 1px}
+#bar li a span.button:hover, #bar li a span.button:hover {box-shadow:inset 0px 0px 5px 2px rgb(255 255 255 / 25%)}
+#bar li a span.button:active, #bar li a span.button:active {box-shadow:inset 0px 0px 15px 2px rgb(0 0 0 / 50%)}
 #login {margin-top:-6.5px!important; padding-top:5.5px; padding-bottom:5.5px; padding-right:3px; border-top:0; border-bottom:0; border-left:0; border-right:0px; border-image:#bdbdbd; border-image-slice:1}
-#nav-dpav select {border-radius:0; border-color:#bbb; box-shadow:inset 0 5px 10px rgba(0,0,0,.07); background:#fff}
+#nav-dpav select {border-radius:0; border-color:#bbb; box-shadow:inset 0 5px 10px rgba(0,0,0,.07)}
 #nav-exit span.button, #rss span.button {background:linear-gradient(#5b5b5b, #000000)!important; border:1px solid #000!important; box-shadow:none!important}
 #nav-exit span.button input, #rss span.button input {color:#fff!important; text-shadow:#000 0 1px!important}
-#nav-exit span.button:hover, #rss span.button:hover {background:linear-gradient(#414141, #000000)!important}
-#nav-exit span.button:active, #rss span.button:active {background:linear-gradient(#252525, #000000)!important}
+#nav-exit span.button:hover, #rss span.button:hover {box-shadow:inset 0px 0px 5px 2px rgb(255 255 255 / 20%)!important}
+#nav-exit span.button:active, #rss span.button:active {box-shadow:inset 0px 0px 15px 2px rgb(0 0 0 / 50%)!important}
 a#nav-exit {border:0px}
 
 /* Body */
@@ -54,7 +54,8 @@ a:active {color:#72c4ff}
 a, .link, .p .hdr a.link {color:#72c4ff}
 
 /* Search form */
-#searchText {border-right:0; border-bottom:0; background:#585858; color:#FFF; border:1px solid #000}
+#searchText {border-right:0; border-bottom:0; background:#212121; color:#FFF; border:1px solid #000}
+#searchText:focus {border-color:#fff}
 #submit {border-top-left-radius:0; border-bottom-left-radius:0}
 #reset {color:#bbb}
 #searchText:focus + .fr #reset {color:#555}
@@ -70,8 +71,6 @@ a, .link, .p .hdr a.link {color:#72c4ff}
 .warning {background:#c00; color:#fff; border-radius:3px}
 .warning a, .warning a:hover {color:#fff; text-decoration:underline}
 .msg code {background:none}
-
-
 
 /* Conversation labels */
 .locked {background:#000; color:#fff; border-radius:3px}
@@ -107,13 +106,14 @@ a.star0:active, a.star1:active {color:#e4b600}
 /* Conversation header */
 #cHdr {background:linear-gradient(#252525, #141414); color:#8fce00; border-radius:20px}
 /* Info and title (left part) */
-#cInfo input.text {background:#585858; color:#FFF; border:1px solid #000}
+#cInfo input.text {background:#585858; padding:3px; color:#FFF; border:1px solid #242424}
 #cInfo .star1, #cInfo .star0 {text-shadow:#fe7 0 0 2px}
-#cInfo .editable:hover {border-style:solid; border-width:1px; border-radius:3}
-#cInfo .editable:focus {border-style:solid; border-width:1px; border-radius:3; color:#000}
-#cTags a {background:#585858; color:#FFF; border:1px solid #000}
+#cInfo .editable:hover {border-style:solid; padding:3px; border-width:1px; border-radius:3}
+#cInfo .editable:focus {border-style:solid; padding:3px; border-width:1px; border-radius:3; border-color:#fff}
+#cTags a {background:#585858; color:#FFF; padding: 0px 4px; border-radius:3px}
 /* Members allowed (right part) */
-#allowed input.text {background:#585858; color:#FFF; border:1px solid #000}
+#allowed input.text {background:#212121; color:#FFF; border:1px solid #000}
+#allowed input.text:focus {border-color:#fff}
 #allowed a.d {color:#8fce00}
 #allowed a.d:hover {color:#f00; text-decoration:line-through}
 #addMember {border-right:0; border-top-right-radius:0; border-bottom-right-radius:0}
@@ -132,10 +132,10 @@ a.star0:active, a.star1:active {color:#e4b600}
 .p {margin-bottom:10px; color:#FFF; border-left-style:solid; border-left-width:1px; border-right-style:solid; border-right-width:1px; border-bottom-style:solid; border-bottom-width:1px; border-radius:3px}
 .p .hdr, .p .hdr small, .p .hdr a {color:#FFF}
 .p .hdr select, .p .hdr input.save {border:dashed rgba(0,0,0,0.2); border-width:1px; border-radius:3px}
-.p .hdr select option {background:#414141; color:#FFF; border-radius:3px}
-.p .hdr .controls a {background:rgba(0,0,0,0.1); border-radius:3px}
-.p .hdr .controls a:hover {background:rgba(0,0,0,0.2); text-decoration:none; border-radius:3px}
-.p .hdr .controls a:active {background:rgba(0,0,0,0.2); border-radius:3px}
+.p .hdr select option {background:#212121; color:#FFF; border-radius:3px}
+.p .hdr .controls a {background:rgba(0,0,0,0.3); border-radius:3px; min-width:3.1em; width:unset; padding:0px 3px}
+.p .hdr .controls a:hover {background:rgba(0,0,0,0.4); text-decoration:none; border-radius:3px}
+.p .hdr .controls a:active {background:rgba(0,0,0,0.5); border-radius:3px}
 .p .body video {background:rgba(0,0,0,0.05); border-radius:3px}
 .deleted, .deleted .hdr, .deleted .hdr a {color:#888; border-radius:6px}
 .deleted {background:#5e5e5e; border-color:#5e5e5e; border-radius:3px}
@@ -145,19 +145,20 @@ a.star0:active, a.star1:active {color:#e4b600}
 .editButtons .big {border-radius:5px; border-top-left-radius:0; border-top-right-radius:0}
 
 /* Formatting buttons */
-.p .controls .formattingButtons a:hover {background-color:rgba(0,0,0,0.5); text-decoration:none; border-radius:2}
-.p .controls .formattingButtons a:active {background-color:rgba(0,0,0,0.2);}
-.p .body textarea {background:#585858; color:#FFF; border:1px solid #272727}
+.p .controls .formattingButtons a:hover {background-color:rgba(0,0,0,0.4); text-decoration:none; border-radius:2}
+.p .controls .formattingButtons a:active {background-color:rgba(0,0,0,0.5);}
+.p .body textarea {background:#585858; color:#FFF; border:1px solid #242424}
+.p .body textarea:focus {border-color:#fff}
 /* Code, quotes, headers */
-pre {border:1px dashed #bbb}
-code {background:#e6e6e6}
-blockquote {background:rgba(0,0,0,0.05); border:solid rgba(0,0,0,0.1); border-width:1px; color:#; border-radius:3}
-blockquote cite {border-bottom:1px dashed rgba(0,0,0,0.2)}
+pre {background:#242424; border-radius:3px; padding:3px 6px}
+code {color:#FFF; background:#242424; border-radius:3px; padding:1px 3px}
+blockquote {background:rgba(255,255,255,0.05); border:solid rgba(255,255,255,0.1); border-width:1px; color:#fff; border-radius:3}
+blockquote cite {border-bottom:1px dashed rgba(255,255,255,0.2)}
 .p .body h3 {border-bottom:1px solid #bbb}
 .p hr {color:#bbb; border:solid #bbb; border-width:1px 0 0}
 
 /* Admin */
-#admin {border-left:175px solid #414141; border-image:#252525); border-image-slice:1; background:#252525; color:#FFF; border-right:20px solid #414141; border-top:10px solid #414141}
+#admin {border-left:175px solid #414141; border-image-slice:1; background:#252525; color:#FFF; border-right:20px solid #414141; border-top:10px solid #414141} 
 #admin .menu {border-right:1px solid #252525; color:#FFF}
 #admin .menu li.active a {background:#252525; border:solid #252525; border-top-left-radius:6px; border-bottom-left-radius:6px; border-width:2px 0 2px 2px; color:#FFF}
 #admin .inner {border-left:1px solid #252525; color:#FFF}
@@ -167,8 +168,9 @@ blockquote cite {border-bottom:1px dashed rgba(0,0,0,0.2)}
 .form.iconForm img {border:1px solid #ddd; color:#FFF}
 
 /* Plugins */
-#plugins .controls a, #plugins .toggle {background:linear-gradient(#5b5b5b, #000000); color:#258500; border: 1px solid #000000; border-radius:2px}
+#plugins .controls a, #plugins .toggle {background:linear-gradient(#5b5b5b, #000000); color:#48ff00; border: 1px solid #000000; border-radius:2px}
 #plugins .controls a, #plugins .enabled .toggle {color:#FFF; background:linear-gradient(#5b5b5b, #000000); border: 1px solid #000000; border-radius:2px}
+#plugins .enabled .toggle{color:#ff4040}
 #plugins .toggle:hover {background:linear-gradient(#414141, #000000); text-decoration:none}
 #plugins .toggle:active {background:linear-gradient(#252525, #000000)}
 #plugins .enabled .toggle:hover, #plugins .controls a:hover {background:linear-gradient(#414141, #000000); text-decoration:none}
@@ -192,32 +194,29 @@ blockquote cite {border-bottom:1px dashed rgba(0,0,0,0.2)}
 #ftr #copyright {border:1px solid #414141; background:#414141; color:#FFF}
 
 /* Inputs, buttons, and other form elements */
-input.text, textarea {background:#585858; color:#FFF; border:1px solid #000}
-input.text:focus, textarea:focus {background:#585858; color:#FFF; border:1px solid #000}
-#cInfo .editable {background:#585858; color:#FFF; border:1px solid #000}
-#cInfo .editable:focus {background:#585858; color:#FFF; border:1px solid #000}
-input::placeholder {background:#585858; color:#FFF}
+input.text, textarea {background:#212121; color:#FFF; border:1px solid #000}
+input.text:focus, textarea:focus {background:#212121; color:#FFF; border-color:#fff}
+input::placeholder {color:#aaa}
 .placeholder {color:#aaa}
 fieldset {border:1px solid #ccc}
 legend {color:#FFF}
-code {color:#FFF; background:#414141}
 fieldset legend a {color:#FFF}
 fieldset.hidden {border-width:1px 0 0}
 fieldset.hidden legend a {color:#666}
-select {background:#585858; color:#FFF; border:1px solid #000}
+select {background:#212121; color:#FFF; border:1px solid #000}
 
 /* Buttons */
-.button, .button input {cursor:pointer; display:-moz-inline-box; display:inline-block; height:20.3px; padding:0; text-align:center; text-shadow:#000000 0 1px; border:1px solid #1a6b9d; border-radius:5px; box-shadow:inset 0 0px 0px rgb(255 255 255 / 50%)}}
-.button {background:linear-gradient(#5b5b5b, #000000); margin:0; border:1px solid #000; border-radius:9px; height:18px}
+.button, .button input {cursor:pointer; display:-moz-inline-box; display:inline-block; height:20.3px; padding:0; text-align:center; text-shadow:#000000 0 1px; border:1px solid #1a6b9d; border-radius:5px; box-shadow:inset 0 0px 0px rgb(255 255 255 / 50%)}
+.button {background:linear-gradient(#5b5b5b, #000000); margin:0; border:1px solid #000; border-radius:5px; height:18px}
 .button input {background:none; border:0; color:#fff; margin-left:5px; margin-right:5px; height:18px}
 .big {height:25px}
 .big input {font-size:140%; height:26px}
-.button:hover {background:linear-gradient(#414141, #000000)}
-.button:active {background:linear-gradient(#252525, #000000)}
-.buttonDisabled, .buttonDisabled:active, .buttonDisabled:hover {background:#585858; border:1px solid #000; box-shadow:none; cursor:default; color:#000; text-shadow:#000000 0 0px}
-.bigDisabled, .bigDisabled:active, .bigDisabled:hover {background:#585858; border:1px solid #000; box-shadow:none; cursor:default; color:#000; text-shadow:#000000 0 0px}
-.buttonDisabled input, .buttonDisabled:active input, .buttonDisabled:hover input {text-shadow:#000 0 1px; cursor:default; color:#000; text-shadow:#000000 0 0px}
-.bigDisabled input, .bigDisabled:active input, .bigDisabled:hover input {color:#585858; text-shadow:#000 0 1px; cursor:default; color:#000; text-shadow:#000000 0 0px}
+.button:hover {box-shadow:inset 0px 0px 5px 2px rgb(255 255 255 / 20%)}
+.button:active {box-shadow:inset 0px 0px 15px 2px rgb(0 0 0 / 50%)}
+.buttonDisabled, .buttonDisabled:active, .buttonDisabled:hover {background:#585858; border:1px solid #000; box-shadow:none; cursor:default; color:rgb(53, 53, 53); text-shadow:#000000 0 0px}
+.bigDisabled, .bigDisabled:active, .bigDisabled:hover {background:#585858; border:1px solid #000; box-shadow:none; cursor:default; color:rgb(53, 53, 53); text-shadow:#000000 0 0px}
+.buttonDisabled input, .buttonDisabled:active input, .buttonDisabled:hover input {cursor:default; color:rgb(53, 53, 53); text-shadow:#000000 0 0px}
+.bigDisabled input, .bigDisabled:active input, .bigDisabled:hover input {color:rgb(53, 53, 53); cursor:default; text-shadow:#000000 0 0px}
 
 /* My settings */
 #settings {color:#FFF}
@@ -231,11 +230,12 @@ form#settingsAvatar {padding-bottom:8px}
 #settingsOther label {width:32em}
 #settingsOther input.checkbox, #settingsOther input.radio {margin:3px 5px 5px 0}
 .hidden#settingsOther, .hidden#settingsPassword {margin-bottom:5px; padding-bottom:0}
-#settings select {background:#585858; color:#FFF; border:1px solid #000}
-#settings input.text {background:#585858; color:#FFF; border:1px solid #000}
+#settings select {background:#212121; color:#FFF; border:1px solid #000}
+#settings input.text {background:#212121; color:#FFF; border:1px solid #000}
 /* Post colors */
-.c1 .hdr, .p .c1 .hdr, #palette .c1 {background:#9090904e} .c1 {border-color:#9090904e; background:#0000000e}
-.c2 .hdr, .p .c2 .hdr, #palette .c2 {background:#5e5e5e4e} .c2 {border-color:#5e5e5e4e; background:#0000000e}
+.c0 .hdr, .p .c0 .hdr, #palette .c0 {background:#9090904e} .c0 {border-color:#9090904e; background:#0000000e}
+.c1 .hdr, .p .c1 .hdr, #palette .c1 {background:#ff59754e} .c1 {border-color:#ff59754e; background:#ff59750e}
+.c2 .hdr, .p .c2 .hdr, #palette .c2 {background:#a3428b4e} .c2 {border-color:#a3428b4e; background:#a3428b0e}
 .c3 .hdr, .p .c3 .hdr, #palette .c3 {background:#8d008c4e} .c3 {border-color:#8d008c4e; background:#8d008c0e}
 .c4 .hdr, .p .c4 .hdr, #palette .c4 {background:#50008d4e} .c4 {border-color:#50008d4e; background:#50008d0e}
 .c5 .hdr, .p .c5 .hdr, #palette .c5 {background:#0b008d4e} .c5 {border-color:#0b008d4e; background:#0b008d0e}
@@ -261,12 +261,15 @@ form#settingsAvatar {padding-bottom:8px}
 .c25 .hdr, .p .c25 .hdr, #palette .c25 {background:#72905f4e} .c25 {border-color:#72905f4e; background:#72905f0e}
 .c26 .hdr, .p .c26 .hdr, #palette .c26 {background:#885d374e} .c26 {border-color:#885d374e; background:#885d370e}
 .c27 .hdr, .p .c27 .hdr, #palette .c27 {background:#0000004e} .c27 {border-color:#0000004e; background:#0000000e}
-.c28 .hdr, .p .c28 .hdr, #palette .c28 {background:#fec0c04e} .c28 {border-color:#fec0c04e; background:#fec0c00e} 
+.c28 .hdr, .p .c28 .hdr, #palette .c28 {background:#5e5e5e4e} .c28 {border-color:#5e5e5e4e; background:#0000000e} 
+.c29 .hdr, .p .c29 .hdr, #palette .c29 {background:#9090904e} .c29 {border-color:#9090904e; background:#0000000e} 
+.c30 .hdr, .p .c30 .hdr, #palette .c30 {background:#ffffff4e} .c30 {border-color:#ffffff4e; background:#ffffff0e} 
+
 /* Special properties */
 #forgotPassword, #markAsRead, #startConversation {background:#252525; color:#FFF; border-radius:3px}
 #forgotPassword:hover, #markAsRead:hover, #startConversation:hover {background-color:#313131; text-decoration:none; border-radius:3px}
 #forgotPassword:active, #markAsRead:active, #startConversation:active {background-color:#191919; border-radius:3px}
-input.text, textarea, .pg {background:#585858; color:#FFF}
+input.text, textarea, .pg {background:#212121; color:#FFF}
 
 /* Mobile properties */
 @media only screen and (max-width:1000px) {
@@ -282,4 +285,19 @@ input.text, textarea, .pg {background:#585858; color:#FFF}
 @media only screen and (max-width:570px) {
 .p .hdr .controls {background:#ddd}
 .formattingCheckbox {border-top:1px solid rgba(0,0,0,0.2)}
+}
+
+/* Firefox */
+::-moz-selection {
+background-color: #6b9900; color: #fff;
+}
+
+/* Safari and Chrome */
+::selection {
+background-color: #6b9900; color: #fff;
+}
+
+/* ezoForum extra styles */
+.categories {border: 1px solid #252525; background: linear-gradient(#212121, #252525, #212121, #141414); border-radius: 10px; padding:6px; margin:3px}
+.cats {float:right;}
 }
